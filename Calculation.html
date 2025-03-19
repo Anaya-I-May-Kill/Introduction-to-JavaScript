@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JavaScript Variables and Calculation</h1>
+
+    <h3>Sum of two numbers</h3>
+    <p id="sum"></p>
+    <h3>Difference of two numbers</h3>
+    <p id="sub"></p>
+
+    <script>
+      var sum, sub;
+
+      const x = 15;
+      const y = 10;
+
+      sum = x + y;
+      sub = x - y;
+
+      document.getElementById(
+        "sum"
+      ).innerHTML = `Summation : ${x} + ${y} = ${sum}`;
+      document.getElementById(
+        "sub"
+      ).innerHTML = `Subtraction : ${x} - ${y} = ${sub}`;
+    </script>
+  </body>
+</html>
