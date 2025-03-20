@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      h3 {
+        font-family: cursive;
+      }
+
+      #sum {
+        font-family: monospace;
+      }
+
+      #sub {
+        font-family: monospace;
+      }
+
+      #mul {
+        font-family: monospace;
+      }
+
+      #div {
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body style="background-color: #252030; color: #cb5d35">
+    <h1 style="font-family: Impact">Mini Calculator</h1>
+
+    <h3>◦ Sum of two numbers</h3>
+    <p id="sum"></p>
+    <h3>◦ Difference of two numbers</h3>
+    <p id="sub"></p>
+    <h3>◦ Product of two numbers</h3>
+    <p id="mul"></p>
+    <h3>◦ Quotient of two numbers</h3>
+    <p id="div"></p>
+    <h3>◦ Exponential of two numbers</h3>
+    <p id="exp"></p>
+
+    <script>
+      var sum, sub;
+
+      const x = 15;
+      const y = 10;
+
+      sum = x + y;
+      sub = x - y;
+      mul = x * y;
+      div = x / y;
+      exp = x ** y;
+
+      document.getElementById(
+        "sum"
+      ).innerHTML = `Summation : ${x} + ${y} = ${sum}`; //Addition
+      document.getElementById(
+        "sub"
+      ).innerHTML = `Subtraction : ${x} - ${y} = ${sub}`; // Subtraction
+      document.getElementById(
+        "mul"
+      ).innerHTML = `Multiplication : ${x} * ${y} = ${mul}`; // Multiplication
+      document.getElementById(
+        "div"
+      ).innerHTML = `Division : ${x} / ${y} = ${div}`; // Division
+      document.getElementById(
+        "exp"
+      ).innerHTML = `Exponential : ${x} ** ${y} = ${exp}`; // Exponential
+    </script>
+  </body>
+</html>
